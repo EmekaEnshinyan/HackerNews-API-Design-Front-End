@@ -1,4 +1,6 @@
+
 {
+  "_comment": "this file contains all the dependencies and scripts required to congigure react",
   "name": "hackernewsapi3",
   "version": "0.1.0",
   "private": true,
