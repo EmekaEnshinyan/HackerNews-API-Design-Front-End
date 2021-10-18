@@ -1,17 +1,16 @@
 //the react functional component with jsx code (js html code, an extension of js). 
   //Often used to make react code simpler to use
-  import * as React from 'react';
+import React from 'react';
   //import ReactDOM from 'react-dom';
   //import Button from '@mui/material/Button';
-  import './App';
-import PrimarySearchAppBar from './components/appbar';
+import './App.css';
+import SearchBar from './Components/SearchBar';
 // after from may be wrong call
   
-  //function App() {
-    const App = () => {
-    return (
+  function App() {
+    return(
       <div className="App">
-        <PrimarySearchAppBar/>
+        <SearchBar/>
       </div>
     );
   }
