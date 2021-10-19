@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <script type="text/babel" src="./lander.js"></script>
   </React.StrictMode>,
   document.getElementById('root')
 );

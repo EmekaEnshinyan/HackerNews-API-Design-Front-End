@@ -5,12 +5,14 @@ import React from 'react';
   //import Button from '@mui/material/Button';
 import './App.css';
 import SearchBar from './Components/SearchBar';
+import Data from './Data';
+
 // after from may be wrong call
-  
+        //text is not showing from placeholder
   function App() {
-    return(
-      <div className="App">
-        <SearchBar/>
+    return( 
+    <div className="App">
+      <SearchBar placeholder="Search For An Article" data={Data}/>
       </div>
     );
   }
