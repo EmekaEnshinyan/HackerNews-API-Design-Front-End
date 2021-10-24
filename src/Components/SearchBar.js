@@ -12,6 +12,7 @@ function SearchBar({placeholder, data}){
     </div>
     <div className="dataResult"></div>
     </div>
+    
     );
 }
 export default SearchBar;
