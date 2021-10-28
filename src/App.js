@@ -6,6 +6,7 @@ import React from 'react';
 import './App.css';
 import SearchBar from './Components/SearchBar';
 import Data from './Data';
+import UserComponent from './Components/UserComponent';
 
 // after from may be wrong call
         //text is not showing from placeholder
@@ -13,7 +14,9 @@ import Data from './Data';
     return( 
     <div className="App">
       <SearchBar placeholder="Search For An Article" data={Data}/>
+      <UserComponent/>
       </div>
+      
     );
   }
   export default App;
