@@ -1,5 +1,5 @@
 import React from "react";
-import UserService from "./Service/UserService";
+import UserService from "../services/UserService";
 
 class UserComponent extends React.Component{
 
