@@ -26,9 +26,10 @@ class UserComponent extends React.Component{
             <table className = "table table-striped">
                 <thread>
                     <tr>
-                        <td> Article ID </td>
                         <td> Article By </td>
-                        <td>  </td>
+                        <td> Article Descendents </td>
+                        <td> Article Id </td>
+                        <td> Article Kids </td>
 
                     </tr>
                 </thread>
@@ -37,8 +38,10 @@ class UserComponent extends React.Component{
                         this.state.users.map(
                             user => 
                                 <tr key = {user.id}>
-                                    <td>{user.id}</td>
                                     <td>{user.By}</td>
+                                    <td>{user.Descendents}</td>
+                                    <td>{user.Id}</td>
+                                    <td>{user.Kids}</td>
                             </tr>
                         )
                     }
