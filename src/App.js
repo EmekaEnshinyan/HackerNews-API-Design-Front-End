@@ -4,8 +4,6 @@ import React from 'react';
   //import ReactDOM from 'react-dom';
   //import Button from '@mui/material/Button';
 import './App.css';
-import SearchBar from './Components/SearchBar';
-import Data from './Data';
 import UserComponent from './Components/UserComponent';
 
 // after from may be wrong call
@@ -13,7 +11,6 @@ import UserComponent from './Components/UserComponent';
   function App() {
     return( 
     <div className="App">
-      <SearchBar placeholder="Search For An Article" data={Data}/>
       <UserComponent/>
       </div>
       

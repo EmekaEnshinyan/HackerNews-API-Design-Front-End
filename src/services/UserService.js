@@ -1,10 +1,10 @@
 import axios from 'axios'
 
-const USERS_REST_API_URL = 'http://localhost:8080/api/test/article';
+const USERS_REST_API_URL = '';
 
 class UserService{
 //here get the userservice class
-    getUsers(){
+    getUser(){
         return axios.get(USERS_REST_API_URL);
     }
 }
