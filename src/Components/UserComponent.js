@@ -8,8 +8,8 @@ class UserComponent extends React.Component{
     constructor (props){
         //???
         super(props)
-        this.state = {users:[]
-        }
+      this.state = {user:[]
+       }
     }
 
     componentDidMount(){
@@ -35,7 +35,7 @@ class UserComponent extends React.Component{
                 </thread>
                 <tbody>
                     {
-                        this.state.users.map(
+                        this.state.user.map(
                             user => 
                                 <tr key = {user.id}>
                                     <td>{user.By}</td>
