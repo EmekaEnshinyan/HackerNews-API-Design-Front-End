@@ -4,7 +4,7 @@ import React from 'react';
   //import ReactDOM from 'react-dom';
   //import Button from '@mui/material/Button';
 import './App.css';
-import UserComponent from './Components/UserComponent';
+import UserComponent from './components/UserComponent';
 
 // after from may be wrong call
         //text is not showing from placeholder
