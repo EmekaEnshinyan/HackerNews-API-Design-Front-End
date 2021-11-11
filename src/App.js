@@ -4,14 +4,14 @@ import React from 'react';
   //import ReactDOM from 'react-dom';
   //import Button from '@mui/material/Button';
 import './App.css';
-import UserComponent from './components/UserComponent';
+import ArticleComponent from './Components/ArticleComponent';
 
 // after from may be wrong call
         //text is not showing from placeholder
   function App() {
     return( 
     <div className="App">
-      <UserComponent/>
+      <ArticleComponent/>
       </div>
       
     );
