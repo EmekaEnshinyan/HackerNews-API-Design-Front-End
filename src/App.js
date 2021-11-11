@@ -10,8 +10,11 @@ import ArticleComponent from './Components/ArticleComponent';
         //text is not showing from placeholder
   function App() {
     return( 
-    <div className="App">
+      <div>
+    <header className="container">
+
       <ArticleComponent/>
+      </header>
       </div>
       
     );

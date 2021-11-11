@@ -28,22 +28,17 @@ export default class ArticleComponent extends React.Component {
                 <table className="table table-striped">
                     <thead>
                         <tr>
-                            <th>Articles Id</th>
-                            <th>Articles Name</th>
-                            <th>Articles Author</th>
+                            <th>By</th>
+                            <th>descendants</th>
+                            <th>id</th>
+                            <th>kids</th>
+                            <th>score</th>
+                            <th>time</th>
+                            <th>title</th>
+                            <th>type</th>
+                            <th>URL</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        {
-                            this.state.books.map(book =>
-                                    <tr key={articles.id}>
-                                        <td>{articles.id}</td>
-                                        <td>{articles.bookName}</td>
-                                        <td>{articles.author}</td>
-                                    </tr>
-                            )
-                        }
-                    </tbody>
                 </table>
             </div>
         )

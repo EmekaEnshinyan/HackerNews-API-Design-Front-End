@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const Articles_API_REST_URL = "http://localhost:3000";
+const Articles_API_REST_URL = "http://localhost:8080/articles";
 
 class APIService {
     
