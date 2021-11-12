@@ -12,6 +12,7 @@ export default class ArticleComponent extends React.Component {
     }
     
     componentDidMount(){
+        axios.getAxios('https://localhost:8080')
         APIService.getArticles().then((data) => {
             this.setState({articles: data })
             console.log(this.state.data)
