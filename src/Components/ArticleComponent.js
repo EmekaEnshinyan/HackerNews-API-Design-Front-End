@@ -10,7 +10,7 @@ export default class ArticleComponent extends React.Component {
              articles: []
         }
     }
-    
+    //consult to redo code below -> https://www.youtube.com/watch?v=NEYrSUM4Umw&ab_channel=Codevolution
     componentDidMount(){
         axios.getAxios('https://localhost:8080')
         APIService.getArticles().then((data) => {
