@@ -1,6 +1,6 @@
 import React from 'react'
 import APIService from '../services/APIService'
-
+//
 export default class ArticleComponent extends React.Component {
 
     constructor(props) {
