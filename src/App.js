@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './App.css';
 import { PostList } from './Components/PostList';
 
 // const api = axios.create({

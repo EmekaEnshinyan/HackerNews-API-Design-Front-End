@@ -6,13 +6,12 @@ export class PostList extends Component {
     constructor(props){
         super(props)
         this.state = {
-            posts: JSON
+            posts: Object
         }
-        
     }
 //https://hacker-news.firebaseio.com/v0/item/29042728.json?print=pretty
     componentDidMount(){
-        axios.get('https://hacker-news.firebaseio.com/v0/item/29042728.json?print=pretty')
+        axios.get('http://localhost:8080/hn/articles')
         .then(response => {
             console.log(response)
             this.setState({posts: response.data})
@@ -24,18 +23,20 @@ export class PostList extends Component {
         }
     
     render(){
-        const {posts} = this.state
+       const {posts} = this.state
         return(
             <div>
-                List Below
-                {
-                posts.length ? 
-                posts.map(post => <div key={post.id}>{post.by}</div>):
-                null
-                }
+               <h1>Hacker News: Article Data</h1>
+               <p>{posts.by}</p>
+               <p>{posts.descendants}</p>
+               <p>{posts.id}</p>
+               <p>{posts.kids}</p>
+               <p>{posts.score}</p>
+               <p>{posts.time}</p>
+               <p>{posts.title}</p>
+               <p>{posts.type}</p>
+               <p>{posts.url}</p>
             </div>
         )
     }
-
-
 }
