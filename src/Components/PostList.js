@@ -9,7 +9,8 @@ export class PostList extends Component {
             posts: Object
         }
     }
-//https://hacker-news.firebaseio.com/v0/item/29042728.json?print=pretty
+
+//A test API endpoint -> https://hacker-news.firebaseio.com/v0/item/29042728.json?print=pretty
     componentDidMount(){
         axios.get('http://localhost:8080/hn/articles')
         .then(response => {
