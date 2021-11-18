@@ -1,24 +1,23 @@
-//the react functional component with jsx code (js html code, an extension of js). 
-  //Often used to make react code simpler to use
-import React from 'react';
-  //import ReactDOM from 'react-dom';
-  //import Button from '@mui/material/Button';
+import React, {Component} from 'react';
 import './App.css';
-import ArticleComponent from './Components/ArticleComponent';
+import { PostList } from './Components/PostList';
 
-// after from may be wrong call
-        //text is not showing from placeholder
-  function App() {
-    return( 
-      <div>
-    <header className="container">
+// const api = axios.create({
+//   baseURL: 'http://localhost:3000'
+// })
 
-      <ArticleComponent/>
-      </header>
-      </div>
-      
-    );
-  }
-  export default App;
+
+class App extends Component {  
+  
+ render(){
+	 return(
+		 <div className="App">
+			<PostList/>
+		 </div>
+	 )
+ }
+}
+
+export default App;
   //ReactDOM.render(<App />, document.querySelector('#app'));
   
