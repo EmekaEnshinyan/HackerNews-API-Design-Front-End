@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# HackerNews-Article-API-Web-Viewer-Front-End
+Fundamental function: A full stack application that makes an API call to Hacker News, collects JSON data, parses the data and sends it to the front end client to do be formatted and displayed on a webpage in a readable format.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This API design displays the data of a news article that was retrieved from the Hacker News API currently using a localhost port. The technologies useed are Java, Springboot in Spring MVC Structure, Javascript, React.js, Atom, MaterialUI, and Node.js.
 
-## Available Scripts
+[![](https://img.shields.io/badge/license-Spring-darkgreen.svg?)](https://www.apache.org/licenses/LICENSE-2.0)
 
-In the project directory, you can run:
+*Questions?  Comments?  Feedback? Email me at emeka.enshinyan@gmail.com 
 
-### `npm start`
+-----
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+# Documentation
+1. [Requirements](#Requirements)
+2. [Setup](#Setup)
+3. [Running-The-Application](#Running-The-Application)
+4. [Plans-&-Improvements](#Plans-&-Improvements)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requirements
+**NOTE** This has not been tested on a Mac or Linux OS.
 
-### `npm run build`
+###### The following tools are required to to have the application run:
+- Java 15 (can also be run on Java 8)
+- Apache-Maven version 15
+- Internet connection
+- A means to compile and run the Java code (the editors I used were IntelliJ for Java and VSCode for JS)
+- Node.JS
+- Bootstrap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup
+#### Back End
+1. Download the HackerNews-API-Design-Back-End repository
+2.  Make sure the server is listening in on the right port (default 8080)
+#### Front End
+1. Download the HackerNews-API-Design-Front-End repository and open it in VSCode
+2. make sure it is listening on a different port (default is 3000)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running-The-Application
+1.  Run the server through IntelliJ by compiling and running the program (you can test via Postman or type in **localhost:8080/hn/articles** in a browser) 
+2. type the following in the terminal either in VSCode or in Windows CLI:
+```
+$cd [directory of HackerNews-API-Design-Front-End repository]
+```
+then npm start:
+```
+$C:\Users\user\HackerNews-API-Design-Front-End> npm start
+```
+A new browser tab should open up showing a list of the Article Data categories predefined by Hacker News.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Plans-&-Improvements
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+display the top 500 trending articles
+integrate DB
