@@ -32,7 +32,7 @@ This API design displays the data of a news article that was retrieved from the 
 
 ## Setup
 #### Back End
-1. Download the [![](Back End Repo)](https://github.com/EmekaEnshinyan/HackerNews-API-Design-Front-End.git)
+1. Download the [(Back End Repo)](https://github.com/EmekaEnshinyan/HackerNews-API-Design-Front-End.git)
 2.  Make sure the server is listening in on the right port (default 8080)
 #### Front End
 1. Download the HackerNews-API-Design-Front-End repository and open it in VSCode
